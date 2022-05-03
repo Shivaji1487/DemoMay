@@ -10,12 +10,12 @@ module.exports =(sequelize,Sequelize)=>{
             type:Sequelize.STRING(150),
             allowNull:false
         },
-        Email:{
-            type:Sequelize.STRING(150),
+        contact:{
+            type:Sequelize.INTEGER(50),
             unique:true
         },
-        Mobile:{
-            type:Sequelize.STRING(12),
+        email:{
+            type:Sequelize.STRING(150),
             allowNull:false
 
         },
