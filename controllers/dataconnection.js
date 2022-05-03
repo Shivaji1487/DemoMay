@@ -1,5 +1,9 @@
 const connection=require('./connection.mysql');
 
+const db=require('../models/index');
+const mayfirst=db.mayfirst;
+const sequelize=db.sequelize;
+
 module.exports ={
     getAll:(req,res)=>{
         connection.query('select * from mayfirst',(err,result)=>{
@@ -54,4 +58,4 @@ module.exports ={
             }
         })
     }
-}
+}\
